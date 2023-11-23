@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+html {
+	line-height: 1.4;
+	scroll-behavior: smooth;
+	text-rendering: optimizeSpeed;
+}
+body {
+	line-height: 1.5;
+	background: #282828;
+}
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
+}
+.login-form,
+.sport-register-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+.container h1,
+.container p {
+	color: #f8f8f8;
+}
+.container a {
+	color: #f8f8f8;
+	text-decoration: underline;
+}
+.login-input,
+.login-button,
+.sport-register-input,
+.sport-register-button {
+	width: 15rem;
+	height: 2rem;
+}
+.login-input,
+.sport-register-input,
+.remove-button {
+	padding: 0.5rem;
+}
+.login-button,
+.sport-register-button,
+.remove-button {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+table {
+	background: #a8a8a8;
+	width: 30rem;
+}
+th,
+td {
+	padding: 0.5rem;
+	text-align: center;
+}
+th {
+	background: #c8c8c8;
+}
+td {
+	background: #f8f8f8;
+}

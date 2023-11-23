@@ -1,0 +1,31 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container">
+	<p class="welcome">
+		{% if session["username"] %} You are logged in as {{ session["username"] }}.
+		<a href="/logout">Log out</a> {% else %} You are <u>not</u> logged in.
+		<a href="/login">Log in</a>
+		{% endif %}
+	</p>
+	<h1>Sport register form</h1>
+	<form class="sport-register-form" action="/register" method="post">
+		<input
+			class="sport-register-input"
+			type="text"
+			name="name"
+			id="name"
+			placeholder="Name"
+			autocomplete="off"
+			autofocus
+			required
+		/>
+		<select class="sport-register-input" name="sport">
+			<option disabled selected>Sport</option>
+			{% for sport in sports %}
+			<option value="{{ sport }}">{{ sport }}</option>
+			{% endfor %}
+		</select>
+		<button class="sport-register-button" type="submit">Register</button>
+	</form>
+	<a href="/registrants">View data</a>
+</div>
+{% endblock %}

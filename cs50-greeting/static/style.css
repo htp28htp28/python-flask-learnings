@@ -1,0 +1,44 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+	text-decoration: none;
+	list-style: none;
+}
+html {
+	line-height: 1.4;
+	text-rendering: optimizeSpeed;
+}
+body {
+	line-height: 1.5;
+	overflow-x: hidden;
+	background: #282828;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+form input,
+form button {
+	height: 2rem;
+	font-family: 'Consolas', 'Courier New', Courier, monospace;
+}
+form input {
+	text-indent: 0.5rem;
+}
+form button {
+	font-weight: 700;
+}
+.greeting-title {
+	color: #f8f8f8;
+}
+.back-link {
+	color: #f8f8f8;
+}
